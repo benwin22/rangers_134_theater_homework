@@ -1,0 +1,166 @@
+.container1 {
+    background-color: black;
+    font-size: xx-large;
+    font-weight: 200;
+    border-bottom: 5px;
+    color: white;
+    text-decoration: none;
+}
+.image1 {
+    margin-right: 200px;
+}
+li {
+    padding: 25px;
+    display: inline-block;
+    text-align: center;
+}
+
+.container {
+    border-bottom: solid black;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    font-size: larger;
+    max-height: 100%;
+    max-width: 100%;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+   
+        ". date date date ."
+        ". show1 show2 show3 ."
+        ". show1 show2 show3 ."
+        ". show1 show2 show3 ."
+        ". show1 show2 show3 ."
+}
+
+h6 {
+    font-size: 15px;
+}
+
+.date {
+    grid-area: date;
+    text-align: center;
+    justify-content: center;
+    background-color: grey;
+    border-style: solid 1px black;
+}
+
+.show1 {
+    grid-area: show1;
+    height: 30vh;
+    text-align: center;
+    display: inline;
+}
+
+.show2 {
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    grid-area: show2;
+    margin: 5px 5px 5px 5px;
+    padding-bottom: 5px;
+}
+
+.show3 {
+    color: black;
+    font-size: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 85px;
+    border: solid black;
+    border: 10px 10px 10px;
+    background-color: rgb(233, 202, 0);
+    grid-area: show3;
+}
+#button {
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: white;
+}
+
+h5 {
+    font-size: larger
+}
+
+.container2 {
+    padding-bottom: 25px;
+    background-color: black;
+    max-height: 100%;
+    max-width: 100%;
+    text-align: left;
+    color: aliceblue;
+    text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 20px;
+    grid-auto-flow: row;
+    grid-template-areas: "map info shows social";
+}
+
+.map {
+    padding-top: 5%;
+    margin-left: 20%;
+    margin-right: auto;
+    /* width: 50%; */
+    grid-area: map;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.info {
+    /* display: block; */
+    margin-left: 20%;
+    margin-right: auto;
+    width: 100%;
+    grid-area: info;
+    text-decoration: none;
+}
+
+.shows {
+    margin-left: 20%;
+    margin-right: auto;
+    width: 100%;
+    grid-area: shows;
+}
+
+.social {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    grid-area: social;
+}
+/* original css from https://grid.layoutit.com/  */
+/* .container {
+    max-height: 100%;
+    max-width: 100%;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        /* ". . . . ."
+        ". . . . ."
+        "image image image image image"
+        "image image image image image"
+        ". date date date ."  
+        ". show1 show2 show3 ."
+        ". show1 show2 show3 ."
+        ". show1 show2 show3 ."
+        ". show1 show2 show3 ."
+        /* "map map info shows social";
+} */
